@@ -1,0 +1,182 @@
+/* css reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* root variables */
+
+/* body */
+body::before{
+    content: "";
+    background: url('/photos/wallpaper2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -5;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* header styling starts here  */
+header::before{
+    content: "";
+    background-color: rgba(245, 245, 245, 0.373);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+header{
+    height: 13vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* logo styling */
+#hd1{
+    height: inherit;
+    width: 20vw;
+    margin-left: 5vw;
+    display: flex;
+}
+
+#hd1 img{
+    height: 100%;
+    width: 38%;
+}
+
+#hd1lname{
+    color: rgb(69, 0, 129);
+    font-weight: bolder;
+    font-size: 4vh;
+    margin-left: 1vh;
+    margin-top: 3.5vh;
+}
+
+/* navbar styling  */
+#hd2{
+    height: inherit;
+    width: 30vw;
+    margin-left: 8vw;
+}
+
+#hd2 nav{
+    margin-top: 4vh;
+}
+
+#hd2 a{
+    color: black;
+    font-weight: 550;
+    text-decoration: none;
+    font-size: 2.8vh;
+    margin-left: 3vw;
+}
+/* header styling ends here  */
+
+/* main styling starts over here  */
+main{
+   height: 87vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+main div {
+    overflow: hidden;
+    border-radius: 23px;
+}
+
+.container{
+    height: 60%;
+    width: 70%;
+    margin-top: 10vh;
+    background-color: rgba(245, 245, 245, 0.38);
+    border: 2px solid grey  ;
+}
+
+/* heading in main section  */
+#main1 {
+ height: 30%;
+ width: 100%;
+ text-align: center;
+ padding-top: 2vh;
+}
+
+/* inner field to put files  */
+#main2{
+    height: 35%;
+    width: 30%;
+    margin: 5vh auto;
+    font-size: 4vh;
+    text-align: center;
+    background-color: rgba(230, 200, 236, 0.734);
+
+}
+
+#main2 form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main2 form input{
+   margin-top: 1.3vh;
+}
+
+#main2 form input[type="submit"]{
+   padding: 5px;
+   width: 40%;
+   /* border-radius: 8px; */
+   border: 1px solid grey
+}
+
+#main2 label{
+    padding-top: 2vh;
+}
+/* main styling ends here  */
+
+/* footer styling starts over here  */
+footer{
+    margin-top: -2vh;
+    padding: 5vh;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    color: rgba(245, 245, 245, 0.737);
+    background-color: rgb(4, 4, 86);
+}
+
+footer h2{
+    color: white;
+    margin-bottom: 2vh;
+}
+
+footer > div{
+    margin-left: 5vw;
+}
+
+#fd1 a{
+    display: block;
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.737);
+    
+}
